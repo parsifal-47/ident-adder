@@ -41,20 +41,22 @@ exports.add_indents = function(text, indent_token, dedent_token, line_comment, c
                 if (comma == line[k]) comma = null;
                 else if (comma == null) comma = line[k];
             }
-            if (lbrackets.indexOf(line[k]) !== -1) {
-                bracket.push(rbrackets[lbrackets.indexOf(line[k])]);
-            }
-            if (rbrackets.indexOf(line[k]) !== -1) {
-                if (bracket.length == 0) {
-                    throw "Bracketig error at line " + i + " column " + k +
-                          " closing without opening";
+            if (comma == null) {
+                if (lbrackets.indexOf(line[k]) !== -1) {
+                    bracket.push(rbrackets[lbrackets.indexOf(line[k])]);
                 }
-                if (line[k] !== bracket[bracket.length - 1]) {
-                    throw "Bracketing error at line " + i + " column " + k + ", " +
-                          "expecting: " + bracket[bracket.length - 1] + " got: " +
-                          line[k];
+                if (rbrackets.indexOf(line[k]) !== -1) {
+                    if (bracket.length == 0) {
+                        throw "Bracketig error at line " + i + " column " + k +
+                              " closing without opening";
+                    }
+                    if (line[k] !== bracket[bracket.length - 1]) {
+                        throw "Bracketing error at line " + i + " column " + k + ", " +
+                              "expecting: " + bracket[bracket.length - 1] + " got: " +
+                              line[k];
+                    }
+                    bracket.pop();
                 }
-                bracket.pop();
             }
         }
         result += line + "\n";
