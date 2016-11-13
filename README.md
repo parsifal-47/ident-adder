@@ -7,6 +7,10 @@ To install package with npm:
 
 	npm install git+https://git@github.com/parsifal-47/ident-adder.git
 
+or
+
+	npm install ident-adder
+
 
 To convert from ident-based JavaScript to ordinary:
 
