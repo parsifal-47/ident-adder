@@ -1,22 +1,22 @@
-Ident-adder
+Indent-adder
 ========
 
-Node module for transformation from ident-based grammar to a non indent-based.
+Node module for transformation from indent-based grammar to a non indent-based.
 
 To install package with npm:
 
-	npm install git+https://git@github.com/parsifal-47/ident-adder.git
+	npm install git+https://git@github.com/parsifal-47/indent-adder.git
 
 or
 
-	npm install ident-adder
+	npm install indent-adder
 
 
-To convert from ident-based JavaScript to ordinary:
+To convert from indent-based JavaScript to ordinary:
 
-	var identadder = require("ident-adder");
+	var indentadder = require("indent-adder");
 
-	console.log(identadder.add_indents(
+	console.log(indentadder.add_indents(
 	"for (var i=0;i<5;i++)\n" +
 	"    console.log(i);",
 	"{", "}","#", "'\"", "([", ")]"));

@@ -1,7 +1,7 @@
-var identadd = require("./index.js");
+var indentadd = require("./index.js");
 
 var assertEq = function (A, B) {
-	var Result = identadd.add_indents(A, "__INDENT__", "__DEDENT__ ",
+	var Result = indentadd.add_indents(A, "__INDENT__", "__DEDENT__ ",
 					"#", "'\"", "([", ")]");
 	if (Result !== B) {
 		console.log("Assert failed, expecting:\n" + B + "\ngot:\n" + Result);

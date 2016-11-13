@@ -1,24 +1,24 @@
 {
-  "name": "ident-adder",
+  "name": "indent-adder",
   "version": "0.1.0",
-  "description": "Ident adder for ident-based grammatics in JavaScript",
+  "description": "indent adder for indent-based grammatics in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/parsifal-47/ident-adder.git"
+    "url": "git+https://github.com/parsifal-47/indent-adder.git"
   },
   "keywords": [
     "parser",
     "grammatics",
-    "idents"
+    "indents"
   ],
   "author": "Renat Idrisov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/parsifal-47/ident-adder/issues"
+    "url": "https://github.com/parsifal-47/indent-adder/issues"
   },
-  "homepage": "https://github.com/parsifal-47/ident-adder#readme"
+  "homepage": "https://github.com/parsifal-47/indent-adder#readme"
 }
