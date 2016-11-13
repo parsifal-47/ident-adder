@@ -1,4 +1,4 @@
-Indent-adder
+Indent-adder [![Build Status](https://travis-ci.org/parsifal-47/indent-adder.svg?branch=master)](https://travis-ci.org/parsifal-47/indent-adder)
 ========
 
 Node module for transformation from indent-based grammar to a non indent-based.
