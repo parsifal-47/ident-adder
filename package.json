@@ -4,7 +4,7 @@
   "description": "indent adder for indent-based grammatics in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
