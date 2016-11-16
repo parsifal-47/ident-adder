@@ -1,6 +1,6 @@
 {
   "name": "indent-adder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "indent adder for indent-based grammatics in JavaScript",
   "main": "index.js",
   "scripts": {

@@ -29,14 +29,12 @@ exports.add_indents = function(text, indent_token, dedent_token, line_comment, c
             }
         }
 
-        readLength = line.indexOf(line_comment) == -1
-                        ? line.length : line.indexOf(line_comment);
-
-        for (var k = 0; k < readLength; k++) {
+        for (var k = 0; k < line.length; k++) {
             if (line[k] == "\\") {
                 k++;
                 continue;
             }
+            if (comma === null && line.indexOf(line_comment, k) === k) break;
             if (commas.indexOf(line[k]) !== -1) {
                 if (comma == line[k]) comma = null;
                 else if (comma == null) comma = line[k];

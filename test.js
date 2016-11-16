@@ -15,6 +15,12 @@ assertEq("foo = f(a,b,c)\n" +
 "__INDENT__   a+b+c, a-b-c\n" +
 "__DEDENT__ ");
 
+assertEq("foo = f(a,b,\"#\") # AAA\n" +
+"   a+b+c, a-b-c",
+"foo = f(a,b,\"#\") # AAA\n" +
+"__INDENT__   a+b+c, a-b-c\n" +
+"__DEDENT__ ");
+
 assertEq("	# Test program\n" +
 "foo = f(a,b,c)\n" +
 "   a+b+c, a-b-c",
